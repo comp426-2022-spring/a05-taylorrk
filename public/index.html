@@ -31,17 +31,20 @@
     <!-- Make some buttons that call functions when you click them.  -->
     <nav>
       <button id="homenav" onclick="homeNav()" class="active">Home</button>
-      <button id="singlenav" onclick="singleNav()">Flip one coin</button>
-      <button id="multinav" onclick="multiNav()">Flip multiple coins</button>
-      <button id="guessnav" onclick="guessNav()">Guess the result</button>
+      
     </nav>
 <!-- This container div wraps all of the other divs. -->
     <div class=container>
 <!-- The first div is just a landing page. -->
 <!-- All of the divs have default classes set so that they will show or not show depending on whether they are active or inactive, respectively -->
     <div id="home" class="active">
-      <h1>You want to flip a coin?</h1>
-      <p>Click the buttons above to flip a coin, flip many coins, or guess a coin flip. 
+      <h1>Choose your game!</h1>
+      <p>Flip a single coin and get a result...</p>
+      <button id="singlenav" onclick="singleNav()">Flip one coin</button>
+      <p>Flip multiple coins and get a result...</p>
+      <button id="multinav" onclick="multiNav()">Flip multiple coins</button>
+      <p>Guess a result...</p>
+      <button id="guessnav" onclick="guessNav()">Guess the result</button>
     </div>    
 <!-- The second div has a button that interacts with the /app/flip/ endpoint. --> 
     <div id="single" class="inactive">
